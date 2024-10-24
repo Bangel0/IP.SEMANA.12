@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    /*body esta generando la fuente de letra y inicializando una margen en valor "0"*/
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*estilo para acomodar las tarjetas en filas en pantallas más pequeñas, dando espacios entre filas, tambien dandole un valor del padding para darle un poco mas de centrado al contenido*/
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 300px;
+    margin: 10px;                    /*estilo para que las tarjetas tengan un ancho de 300px y un margen de 10px*/
+    border: 1px solid #ccc;       /*estilo para el borde de las tarjetas y el color de su contorno*/
+    padding: 20px;             /*estilo para el padding de las tarjetas y el color de su contenido*/
+    border-radius: 5px;          /*estilo para el radio de curvatura de las tarjetas*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);         /*estilo para el efecto de sombra en las tarjetas*/
+}
+
+.tarjeta img {               /*estilo para el estilo de la imagen en las tarjetas*/
+    width: 100%;            /*estilo para que la imagen tenga el mismo ancho que la tarjeta y se ajuste al alto automaticamente*/
+    height: auto;         /*estilo para que la imagen tenga el mismo alto que la tarjeta y se ajuste al ancho automaticamente*/
+    display: block;         /*estilo para que la imagen se muestre en bloque en la tarjeta*/
+    border-radius: 5px 5px 0 0;          /*estilo para el radio de curvatura de la imagen en las tarjetas*/
+}
+
+.tarjeta h3 {
+    margin-top: 30px;      /*estilo para que el título tenga un margen superior de 30px */
+    font-size: 150%;   /*estilo para el tamaño del título y el interlineado de las tarjetas*/
+}
+
+.tarjeta p {
+    font-size: 0.9em;  /*estilo para el tamaño del párrafo y el interlineado de las tarjetas*/
+    line-height: 1.5;     /*estilo para el interlineado del párrafo de las tarjetas*/
+}
